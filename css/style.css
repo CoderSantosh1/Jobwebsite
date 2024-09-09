@@ -1,4 +1,5 @@
 /********** Template CSS **********/
+
 :root {
     --primary: #00B074;
     --secondary: #2B9BFF;
@@ -507,4 +508,44 @@ padding-right: 2rem;
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+.main{
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    animation: fadeIn 3s ease-out;
+}
+
+/* Animation for heading and paragraph */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Connection Line Animation */
+@keyframes slideInLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
